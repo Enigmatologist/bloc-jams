@@ -211,7 +211,11 @@ require.register("scripts/album", function(exports, require, module) {
    }
  };
 
+<<<<<<< HEAD
  var updateSeekPercentage = function($seekBar, event) {
+=======
+  var updateSeekPercentage = function($seekBar, event) {
+>>>>>>> functional-player-controls
    var barWidth = $seekBar.width();
    var offsetX = event.pageX - $seekBar.offset().left;
 
@@ -223,7 +227,11 @@ require.register("scripts/album", function(exports, require, module) {
    var percentageString = offsetXPercent + '%';
    $seekBar.find('.fill').width(percentageString);
    $seekBar.find('.thumb').css({left: percentageString});
+<<<<<<< HEAD
  }
+=======
+ };
+>>>>>>> functional-player-controls
 
  var setupSeekBars = function() {
  
@@ -234,6 +242,11 @@ require.register("scripts/album", function(exports, require, module) {
 
    $seekBars.find('.thumb').mousedown(function(event){
     var $seekBar = $(this).parent();
+<<<<<<< HEAD
+=======
+
+      $seekBar.addClass('no-animate');
+>>>>>>> functional-player-controls
  
     $(document).bind('mousemove.thumb', function(event){
         updateSeekPercentage($seekBar, event);
@@ -241,6 +254,11 @@ require.register("scripts/album", function(exports, require, module) {
  
     //cleanup
     $(document).bind('mouseup.thumb', function(){
+<<<<<<< HEAD
+=======
+      $seekBar.removeClass('no-animate');
+
+>>>>>>> functional-player-controls
       $(document).unbind('mousemove.thumb');
       $(document).unbind('mouseup.thumb');
     });
@@ -258,7 +276,10 @@ require.register("scripts/album", function(exports, require, module) {
         
         changeAlbumView(albumPicasso);
         setupSeekBars();
+<<<<<<< HEAD
 
+=======
+>>>>>>> functional-player-controls
    });
  }
 
