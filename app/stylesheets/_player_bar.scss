@@ -150,6 +150,12 @@
       transition: all 100ms ease-in-out;
     }
     
+    &.no-animate {
+      .fill, .thumb {
+        transition: none;
+      }
+    }
+    
     @mixin margin-top-left($margin){ //Mixin for margin-top & margin-left
       margin-top: $margin;
       margin-left: $margin;
