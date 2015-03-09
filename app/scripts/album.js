@@ -168,11 +168,8 @@
    $(document).ready(function() {
         
         changeAlbumView(albumPicasso);
-<<<<<<< HEAD
-
-=======
         setupSeekBars();
->>>>>>> functional-player-controls
+
    });
  }
 
