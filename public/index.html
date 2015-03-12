@@ -11,7 +11,9 @@
 
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> <!-- This link was added in Ckpt #35 and was not present before and was not shown to be added, but is now present-->
 
-      <link rel="stylesheet" type="text/css" href="/stylesheets/app.css"> 
+      <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
       <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> Link not present in Ckpt #35 -->
 
@@ -30,10 +32,13 @@
      <nav class="player-header-nav navbar">
        <div class="container">
          <div class='navbar-header'> <!-- Nav Bar -->
-           <a class='logo navbar-left'>
+           <a ui-sref='landing' class='logo navbar-left'>
              <img src="/images/blocjams.png">
            </a>
          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref='collection'>Library</a></li>
+          </ul>
        </div>
      </nav>
  
